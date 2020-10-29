@@ -9,8 +9,6 @@ import Portfolio from './pages/Portfolio';
 
 const App = () => {
   return (
-    <div>
-      
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Home} />
@@ -20,7 +18,6 @@ const App = () => {
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
-    </div>
   );
 };
 
