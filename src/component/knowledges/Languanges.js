@@ -2,7 +2,7 @@ import React from 'react';
 
 const Languanges = () => {
     return (
-        <div className="languangesContent">
+        <div className="languagesContent">
             <h3>Languages & Framworks</h3>
             <div className="languages">
                 <h4>Languages</h4>
@@ -26,7 +26,7 @@ const Languanges = () => {
                 </ul>
             </div>
 
-            <div className="frameworks">
+            <div className="framworks">
                 <h4>Framworks</h4>
                 <ul>
                     <li>
