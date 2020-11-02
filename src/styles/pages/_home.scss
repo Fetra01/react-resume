@@ -58,28 +58,31 @@
 
 @media screen and (max-width: 850px) {
     .homeContent {
+        min-height: 830px !important;
         margin: 0 !important;
+
+        .content {
+            margin-left: -2.2rem !important;
+        }
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 500px) {
     .homeContent {
+        min-height: 640px !important;
         &:after {
             background: url('../../media/computer.jpg') no-repeat 60% 50%/cover !important;
         }
 
         h1 {
-            margin-left: -1.5rem;
             font-size: 2.3rem !important;
         }
 
         h2 {
-            margin-left: -1.5rem;
             font-size: 1.3rem !important;
         }
 
         .pdf {
-            margin-left: -1.5rem !important;
             
             a {
                 font-size: 1rem !important;

@@ -220,6 +220,12 @@
     }
 }
 
+@media screen and (max-width: 850px){
+    .portfolioContent {
+        min-height: 830px !important;
+    }
+}
+
 @media (max-width: 650px) and (min-height: 521px) {
     .portfolioContent{
         .projects{
@@ -240,21 +246,24 @@
     }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 500px) {
     .radioDisplay{
-        display: none !important;
+        min-width: 100% !important;
+        
+        li {
+            font-size: .7rem !important;
+        }
     }
     .portfolioContent{
         grid-template-rows: 1fr !important;
-
-       
-
-        .project {
-            grid-template-rows: 30px 40px 80px 40px !important;
-            width: 98% !important;
-
-            img {
-                height: 100% !important;
+        .projects{
+            .project {
+                grid-template-rows: 30px 40px 190px 40px !important;
+                width: 100% !important;
+    
+                img {
+                    height: 100%!important;
+                }
             }
         }
     }

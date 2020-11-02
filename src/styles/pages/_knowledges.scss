@@ -46,10 +46,12 @@
 
             .languages {
                 grid-area: L;
+                text-align: center;
             }
 
             .framworks {
                 grid-area: F;
+                text-align: center;
             }
 
             li {
@@ -176,6 +178,8 @@
 
 @media screen and (max-width: 850px) {
     .knowledgesContent {
+        min-height: 830px !important;
+
         h4 {
             font-size: .9rem !important;
         }
@@ -212,7 +216,7 @@
         .otherSkills {
             grid-area: 3 !important;
             margin-right: 0 !important;
-
+            
             span {
                 margin-left: .3rem !important;
                 font-size: .8rem !important;
@@ -222,6 +226,10 @@
         .hobbies {
             grid-area: 4 !important;
             margin-top: .5rem !important;
+            
+            ul {
+                margin-left: 2.2rem!important;
+            }
         }
     }
 }
