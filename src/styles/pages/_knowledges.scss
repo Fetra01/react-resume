@@ -90,6 +90,15 @@
         h4 {
             font-size: 1.1rem;
             color: $color-4;
+            
+            a{
+                color: $color-4;
+
+                &:hover{
+                    color: $color-5;
+                }
+            }
+
         }
 
         h5 {
