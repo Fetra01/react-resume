@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from '../component/Navigation';
+import Navigation from '../components/Navigation';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Contact = () => {
