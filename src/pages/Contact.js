@@ -34,17 +34,9 @@ const Contact = () => {
                             <h4>LinkedIn</h4>
                             <i className="fab fa-linkedin"></i>
                         </a>
-                        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
+                        <a href="http://www.github.com/Fetra01" target="_blank" rel="noopener noreferrer">
                             <h4>Github</h4>
                             <i className="fab fa-github"></i>
-                        </a>
-                        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
-                            <h4>Twitter</h4>
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
-                            <h4>CodePen</h4>
-                            <i className="fab fa-codepen"></i>
                         </a>
                     </ul>
                 </div>
