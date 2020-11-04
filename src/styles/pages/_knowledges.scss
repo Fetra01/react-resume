@@ -76,11 +76,12 @@
         margin: 0 0 .5rem .5rem;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr 1fr;
         grid-template-areas: 
             "1"
             "2"
             "3"
+            "4"
         ;
 
         h3 {
@@ -117,6 +118,9 @@
 
         .exp2 {
             grid-area: 3;
+        }
+        .exp {
+            grid-area: 4;
         }
     }
 
