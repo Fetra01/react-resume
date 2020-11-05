@@ -19,33 +19,15 @@ const Home = () => {
                                     .pauseFor(2500)
                                     .typeString(" Développeur Web et application")
                                     .pauseFor(1500)
-                                    .deleteChars(18)
-                                    .typeString("React")
-                                    .start();
+                                    .deleteAll()
+                                    .typeString(' Je Développes en Php/Symfony')
+                                    .pauseFor(1500)
+                                    .deleteChars(11)
+                                    .typeString(' Js/React')
+                                    .start()
+                                    .deleteAll()
                             }}
-                           
                         />
-                        {/*<Typewriter
-                            onInit={(typewriter) => {
-                                typewriter.typeString('Hello World!')
-                                .callFunction(() => {
-                                    console.log('String typed out!');
-                                })
-                                .pauseFor(2500)
-                                .deleteAll()
-                                .callFunction(() => {
-                                    console.log('All strings were deleted');
-                                })
-                                .start();
-                             }}
-                        />
-                        <Typewriter
-                            options={{
-                                strings: ['Hello', 'World'],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        />*/}
                     </h2>
 
                     <div className="pdf">
