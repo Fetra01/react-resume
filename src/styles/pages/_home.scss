@@ -23,36 +23,114 @@
             top: 20%;
             left: 13%;
             font-family: $font-1;
+            
+            .title {
+                h1 {
+                    font-size: 5rem;
+                    font-family: $font-3;
+                    color: $color-5;
+                    text-transform: uppercase;
+                    text-shadow: 3px 6px 2px $black;
+                }
 
-            h1 {
-                font-size: 5rem;
-                font-family: $font-3;
-                color: $color-5;
-                text-transform: uppercase;
-                text-shadow: 3px 6px 2px $black;
+                h2 {
+                    font-size: 2.5rem;
+                    padding: 1.5rem 0 7rem;
+                    color: $color-3;
+                    text-shadow: 1px 4px 1px $black;
+                }    
             }
 
-            h2 {
-                font-size: 2.5rem;
-                padding: 1.5rem 0 7rem;
-                color: $color-3;
-                text-shadow: 1px 4px 1px $black;
-            }
+            .contentInfo {
+                .info {
+                    width: 235px;
+                    
+                    .button {
+                        cursor: pointer;
+                        font-size: 1.5rem;
+                        background: $color-3;
+                        padding: 1rem 2rem;
+                        border-radius: $borderRadius;
+                        box-shadow: 0 5px 1px $black;
 
-            .pdf {
-                a {
-                    font-size: 1.5rem;
-                    background: $color-3;
-                    padding: 1rem 2rem;
-                    border-radius: $borderRadius;
-                    box-shadow: 0 5px 1px $black;
+                        &:hover {
+                            background: $color-4;
+                        }
+                    }
 
-                    &:hover {
-                        background: $color-4;
+                    .show {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        width: 170%;                        
+                        //background: rgba(0, 0, 0, 0.507);
+                        animation: popup .3s ease forwards;
+                        transform-origin: center;
+
+                        .showContent {
+                            position: relative;
+                            //top: 25%;
+                           // width: 100%;
+                            //height: 100%;
+                            margin: 0 auto;
+                            color: $color-5;
+                            background: $color-2;
+                            border-radius: $borderRadius;
+                            padding: 2rem;
+                            box-shadow: 0 10px 10px $black;
+                            animation: popup .6s ease forwards;
+                            transform: scale(0);
+                            transform-origin: center;
+
+                            @keyframes popup {
+                                to {
+                                    transform: scale(1);
+                                }
+                            }
+
+                            h2 {
+                                font-size: 2rem;
+                                text-align: center;
+                                margin-bottom: 1rem;
+                                color: $color-3;
+                            }
+
+                            .text {
+                                text-align: justify;
+                                padding-bottom: 1.5rem;
+                                font-size: 1.5rem;
+                            }
+
+                            .return {
+                                color: $color-1;
+                                text-align: center;
+                                margin: 1rem auto;
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+
+                .pdf{
+                    padding-top: 4rem;
+                    a {
+                        font-size: 1.5rem;
+                        background: $color-3;
+                        padding: 1rem 2rem;
+                        border-radius: $borderRadius;
+                        box-shadow: 0 5px 1px $black;
+
+                        &:hover {
+                            background: $color-4;
+                        }
                     }
                 }
             }
+            
         }
+       
     }
 }
 
@@ -81,11 +159,31 @@
         h2 {
             font-size: 1.3rem !important;
         }
+        
+        .contentInfo {
+            .info {
+                width: 82% !important;
+                
+                .button {
+                    font-size: 1rem !important;
+                    text-align: center;
+                }
+                
+                .show {
+                    width: 180% !important;
+                    //height: 140px !important;
+                    top: -8rem !important;
+                    .showContent {
+                        font-size: .7rem !important;
+                    }
+                }
+            }
 
-        .pdf {
+            .pdf {
             
-            a {
-                font-size: 1rem !important;
+                a {
+                    font-size: 1rem !important;
+                }
             }
         }
     }
