@@ -25,6 +25,7 @@
             font-family: $font-1;
             
             .title {
+                
                 h1 {
                     font-size: 5rem;
                     font-family: $font-3;
@@ -34,6 +35,7 @@
                 }
 
                 h2 {
+                    width: auto;
                     font-size: 2.5rem;
                     padding: 1.5rem 0 7rem;
                     color: $color-3;
@@ -122,8 +124,9 @@
                         border-radius: $borderRadius;
                         box-shadow: 0 5px 1px $black;
 
-                        &:hover {
+                        &:hover  {
                             background: $color-4;
+                            
                         }
                     }
                 }
@@ -147,7 +150,7 @@
 
 @media screen and (max-width: 500px) {
     .homeContent {
-        min-height: 640px !important;
+        min-height: 700px !important;
         &:after {
             background: url('../../media/computer.jpg') no-repeat 60% 50%/cover !important;
         }
@@ -170,12 +173,11 @@
                 }
                 
                 .show {
-                    width: 180% !important;
+                    width: 170% !important;
                     //height: 140px !important;
-                    top: -8rem !important;
-                    .showContent {
-                        font-size: .7rem !important;
-                    }
+                    top: -9rem !important;
+                    margin: 0 auto !important;
+                    
                 }
             }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from '../components/Navigation'; 
-//import Typewriter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect';
 import Info from '../components/Info'
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
                         Bienvenue
                         </h1>
                         <h2> 
-                            {/*<Typewriter 
+                            <Typewriter 
                                 onInit={(typewriter) => {
                                     typewriter
                                         .typeString("Moi c'est Fetra,")
@@ -28,14 +28,15 @@ const Home = () => {
                                         .typeString(' Js/React')
                                         .start()
                                         .deleteAll()
+                                        .typeString("Et un bon vivant :)")
                                 }}
-                            />*/}Hello
+                            />
                         </h2>
                     </div>
                     <div className="contentInfo">
                         <Info />
-                        <div className="pdf">
-                            <a href="./media/CV.pdf" target="_blank" >Télécharger CV</a>
+                        <div className="pdf pulsing">
+                            <a href="../media/CV.pdf" target="_blank" >Télécharger CV</a>
                         </div>
                     </div>
                     

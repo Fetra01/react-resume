@@ -13,7 +13,7 @@ class Info extends Component {
     render() {
       return (
             <div className="info">
-                <div className="button" onClick={this.handleShow}>A propos</div>
+                <div className="button" onClick={this.handleShow}>A-propos</div>
             {
                 this.state.show && (
                     <div className="show">
